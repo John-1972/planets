@@ -1,4 +1,21 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
+.navbar-title {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 30px;
+  color: grey;
+  margin-left: 40px; /* Moves text away from browser's LH edge */
+  margin-top: 5px; /* Nudges text down from top of page */
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
 
 .clear {
   clear: both;
