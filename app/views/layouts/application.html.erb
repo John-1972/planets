@@ -17,7 +17,14 @@
 
     <br class="clear" />
 
-    <%= yield %>
+    <div class="col-3 left-arrow">
+      <%= link_to '< Previous planet', "#" %>    
+    </div>
 
+    <div class="col-10 right-arrow">
+      <%= link_to 'Next planet >', planet_path(@planet.id + 1) %>
+    </div>
+
+    <%= yield %>
   </body>
 </html>
