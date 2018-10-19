@@ -1,12 +1,9 @@
 class PlanetsController < ApplicationController
 	def index
-		@planet = Planet.first
-    # @current_planet = @planet
+    redirect_to planet_path(1) # Index page is blank, immediately re-direct to 1st show page
 	end
 
   def show
-    # @next_planet_id = @current_planet.id + 1
-    @planet = Planet.find(2)
-    # @current_planet = @planet
+    @planet = Planet.find(params[:id])
   end
 end
