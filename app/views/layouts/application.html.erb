@@ -17,11 +17,11 @@
 
     <br class="clear" />
 
-    <div class="col-3 left-arrow">
+    <div class="float-left nav-link">
       <%= link_to '< Previous planet', planet_path(@planet.id - 1) %>    
     </div>
 
-    <div class="col-10 right-arrow">
+    <div class="float-right nav-link">
       <%= link_to 'Next planet >', planet_path(@planet.id + 1) %>
     </div>
 
