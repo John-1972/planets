@@ -18,11 +18,13 @@
     <br class="clear" />
 
     <div class="float-left nav-link">
-      <%= link_to '< Previous planet', planet_path(@planet.id - 1) %>    
+      <!-- If this isn't the first planet, it's okay to have a 'previous planet' link -->
+      <%= link_to_if @not_first_planet, '< Previous planet', planet_path(@planet.id - 1) %>    
     </div>
 
     <div class="float-right nav-link">
-      <%= link_to 'Next planet >', planet_path(@planet.id + 1) %>
+      <!-- If this isn't the last planet, it's okay to have a 'next planet' link -->
+      <%= link_to_if @not_last_planet, 'Next planet >', planet_path(@planet.id + 1) %>
     </div>
 
     <%= yield %>
