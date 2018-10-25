@@ -4,7 +4,7 @@ class CreatePlanets < ActiveRecord::Migration[5.0]
       t.string :name
       t.string :dist_from_sun
       t.string :eq_diameter
-      t.string :orbit_period	
+      t.string :orbit_period
       t.timestamps
     end
   end

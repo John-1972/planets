@@ -13,5 +13,5 @@ class PlanetsController < ApplicationController
     if @planet.id != 8 
       @not_last_planet = true # If this isn't the last planet, set boolean to that effect
     end
-  end
+  end # show
 end
