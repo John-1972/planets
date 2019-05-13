@@ -1,24 +1,7 @@
-# README
+# Planets of the Solar System
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the first and simplest MVC project shown on the After-Bootcamp site that newly-qualified bootcamp graduates can try to build for themselves. It's a slideshow app to display a photo of every planet that orbits the Sun, together with some basic statistics.
 
-Things you may want to cover:
+The instruction page can be seen here: http://after-bootcamp-website.herokuapp.com/projects/planets
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+And the end result can be seen here: https://planets-after-bootcamp.herokuapp.com/
