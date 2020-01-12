@@ -10,19 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181025163340) do
+ActiveRecord::Schema.define(version: 2018_10_25_163340) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "planets", force: :cascade do |t|
-    t.string   "name"
-    t.string   "dist_from_sun"
-    t.string   "eq_diameter"
-    t.string   "orbit_period"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-    t.string   "imageurl"
+  create_table "planets", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.string "dist_from_sun"
+    t.string "eq_diameter"
+    t.string "orbit_period"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "imageurl"
   end
 
 end
