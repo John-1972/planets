@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-# ruby '2.5.3' # Informs Heroku
+ruby '2.5.3' # Informs Heroku
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -8,11 +8,11 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0' # Was '~> 5.1.0'
+gem 'rails', '~> 5.2.3' # Was '~> 5.2.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '>= 3.12.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -23,6 +23,8 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'nokogiri', '>= 1.10.4'
+gem 'rack', '>= 2.0.8'
+gem 'loofah', '>= 2.3.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
