@@ -23,7 +23,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'nokogiri', '>= 1.10.4'
-gem 'rack', '>= 2.0.8'
+gem 'rack', '>= 2.1.1'
 gem 'loofah', '>= 2.3.1'
 
 # Use jquery as the JavaScript library
