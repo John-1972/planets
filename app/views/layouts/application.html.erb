@@ -9,24 +9,24 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="col-4 navbar-brand">
+    <nav class="navbar navbar-dark bg-dark"> <!-- Bootstrap navbar, light text on dark bkgrnd -->
+      <div class="col-4 navbar-brand"> <!-- Column for logo, 4/12 of width -->
   			Planets of the Solar System
-  		</div>
-  	</nav>
+  		</div> <!-- class="col-4 navbar-brand" -->
+  	</nav> <!-- class="navbar" -->
 
-    <br class="clear" />
+    <br class="clear" /> <!-- Line break with clearfix (?) -->
 
-    <div class="float-left nav-link">
+    <div class="float-left nav-link"> <!-- Push link to left hand side -->
       <!-- If this isn't the first planet, it's okay to have a 'previous planet' link -->
       <%= link_to_if @not_first_planet, '< Previous planet', planet_path(@planet.id - 1) %>    
     </div>
 
-    <div class="float-right nav-link">
+    <div class="float-right nav-link"> <!-- Push link to right hand side -->
       <!-- If this isn't the last planet, it's okay to have a 'next planet' link -->
       <%= link_to_if @not_last_planet, 'Next planet >', planet_path(@planet.id + 1) %>
     </div>
 
-    <%= yield %>
+    <%= yield %> <!-- Insert page HTML here -->
   </body>
 </html>
